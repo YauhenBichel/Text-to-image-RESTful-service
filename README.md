@@ -2,6 +2,8 @@
 REST API service for images generation using Stable Diffusion model based on prompt and receiving a link to a generated image
 
 ## How to run
+>gradle build
+
 
 ## Overview
 Generative AI is widely used in many applications for text generation, speech to text, text
@@ -77,3 +79,8 @@ The following guides illustrate how to use some features concretely:
 These additional references should also help you:
 
 * [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
+- build an image
+>docker build -t texttoimage/myapp .
+
+- run the app using docker
+>docker run -p 8080:8080 texttoimage/myapp
