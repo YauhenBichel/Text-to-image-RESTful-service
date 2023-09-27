@@ -43,3 +43,8 @@ database.
 
 ### Languages and Tools
 Java 17, Spring Boot, AWS S3 Storage, Redis, Kafka, Python, TensorFlow, Keras
+
+### References
+- [https://blog.tensorflow.org/2023/04/serving-with-tf-and-gke-stable-diffusion.html](https://blog.tensorflow.org/2023/04/serving-with-tf-and-gke-stable-diffusion.html)
+- [https://flask.palletsprojects.com/en/2.3.x/](https://flask.palletsprojects.com/en/2.3.x/)
+- [https://github.com/CompVis/stable-diffusion](https://github.com/CompVis/stable-diffusion)
