@@ -95,3 +95,37 @@ These additional references should also help you:
 redis-cli:
 >redis-cli
 
+Redis provides free of 30 MB of RAM on cloud provides as AWS, GCP and Azure
+- https://redis.com/try-free/
+
+
+### Vault for keeping secrets
+- https://developer.hashicorp.com/vault/tutorials/getting-started/getting-started-intro
+- https://developer.hashicorp.com/vault/tutorials/getting-started/getting-started-install
+> brew tap hashicorp/tap
+> brew install hashicorp/tap/vault
+> brew upgrade hashicorp/tap/vault
+Run cmd: vault to validate that the vault is installed
+
+start the dev server
+>vault server -dev
+>export VAULT_ADDR='http://127.0.0.1:8200'
+>export VAULT_DEV_ROOT_TOKEN_ID=<>
+>vault status
+key             Value
+---             -----
+Seal Type       shamir
+Initialized     true
+Sealed          false
+Total Shares    1
+Threshold       1
+Version         1.15.0
+Build Date      2023-09-22T16:53:10Z
+Storage Type    inmem
+Cluster Name    vault-cluster-420fd028
+Cluster ID      61af2010-6c40-acf3-c1ba-826a1c10970c
+HA Enabled      false
+
+>
+
+models--CompVis--stable-diffusion-v1-4 size is 5 GB
