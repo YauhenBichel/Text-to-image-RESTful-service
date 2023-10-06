@@ -85,6 +85,8 @@ These additional references should also help you:
 - run the app using docker
 >docker run -p 8080:8080 texttoimage/myapp
 
+## Tools
+
 ### Redis installing on macOS
 - https://redis.io/docs/getting-started/installation/install-redis-on-mac-os/ 
 > brew install redis
@@ -126,6 +128,11 @@ Cluster Name    vault-cluster-420fd028
 Cluster ID      61af2010-6c40-acf3-c1ba-826a1c10970c
 HA Enabled      false
 
->
+- Add a secret
+>vault kv put secret/text-to-image redis-cloud-key=<>
+>vault kv get secret/text-to-image
+
+- return json format of a secret
+>vault kv get -format=json secret/text-to-image
 
 models--CompVis--stable-diffusion-v1-4 size is 5 GB
