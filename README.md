@@ -84,3 +84,14 @@ These additional references should also help you:
 
 - run the app using docker
 >docker run -p 8080:8080 texttoimage/myapp
+
+### Redis installing on macOS
+- https://redis.io/docs/getting-started/installation/install-redis-on-mac-os/ 
+> brew install redis
+> redis-server
+> brew services start redis
+> brew services stop redis
+
+redis-cli:
+>redis-cli
+
