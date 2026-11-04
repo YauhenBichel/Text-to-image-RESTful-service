@@ -5,6 +5,27 @@ REST API service for images generation using Stable Diffusion model based on pro
 >gradle build
 
 
+## API (what is implemented today)
+
+There is one endpoint, and **it is a stub**: it returns placeholder values and does not generate or look up an image. The design below this section describes the intended service.
+
+`GET /image/{id}`, where `id` is a number. Responses are JSON or XML, chosen by the `Accept` header.
+
+```bash
+curl -s http://localhost:8080/image/1 -H 'Accept: application/json'
+```
+
+```json
+{"id": "<random UUID>", "url": "http://localhost:8080", "filePath": "test path"}
+```
+
+| Status | When |
+|---|---|
+| 200 | Any numeric `id`; `id` in the body is a new random UUID, not the requested one |
+| 400 | `id` is not a number (Spring's default error body) |
+
+There is no `POST` endpoint yet to create an image, so the request schema in the issue doesn't apply.
+
 ## Overview
 Generative AI is widely used in many applications for text generation, speech to text, text
 to image, image to text and many other different transformations. One of possible areas for
